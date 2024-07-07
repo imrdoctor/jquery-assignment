@@ -1,0 +1,91 @@
+:root{
+    --main-color: #d62e3399;
+    --dark-back: #111111;
+}
+a{
+    text-decoration: none;
+}
+
+.sidebar{
+    background-color: var(--dark-back);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+}
+.sidebar {
+    position: fixed;
+    left: -205px; 
+}
+body .sidebar .item a:hover{
+    color: var(--main-color);
+}
+.icon-open {
+    cursor: pointer;
+}
+.icon-close{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    transition: .4s;
+}
+.icon-close:hover{
+    color: var(--main-color);
+}
+.item a{
+    color: white;
+    transition: .4s;
+}
+.home{
+    background-image: url("../imgs/home.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #901e208a;
+}
+
+.faq{
+    cursor: pointer;
+}
+.item .data {
+    display: none; 
+    overflow: hidden; 
+}
+.item.active p{    
+    display: block;
+}
+.col-down{
+    padding: 100px;
+    background-image: url("../imgs/join.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 9999;
+}
+.col-down .container{
+    position: relative;
+}
+.col-down::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #901e208a;
+}
+.col-down .row .item{
+    padding: 50px;
+    border: solid white 5px;
+    text-align: center;
+}
+/* Start footer */
+footer textarea{
+    height: 200px;
+}
+/* End Footer */
